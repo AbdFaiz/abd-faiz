@@ -1,0 +1,15 @@
+/* * {
+   outline: 1px solid red;
+} */
+
+html {
+  scroll-behavior: smooth;
+}
+
+.wrp-pt .rct {
+  transition: all 0.4s ease-in-out;
+}
+
+.wrp-pt:hover .rct {
+  transform: rotate(-15deg);
+}
