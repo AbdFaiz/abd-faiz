@@ -1,379 +1,607 @@
 <!DOCTYPE html>
 <html lang="en" class="scroll-smooth">
-
-<head>
+  <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Portfolio</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="shortcut icon" href="img/mii.png" type="image/x-icon" />
     <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css" />
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js" defer></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"
+      defer
+    ></script>
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js" defer></script>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap" rel="stylesheet" />
-    <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@400;700&display=swap" rel="stylesheet" />
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet" />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.6.0/remixicon.css" integrity="sha512-kJlvECunwXftkPwyvHbclArO8wszgBGisiLeuDFwNM8ws+wKIw0sv1os3ClWZOcrEB2eRXULYUsm8OVRGJKwGA==" crossorigin="anonymous" referrerpolicy="no-referrer"
+    <link
+      href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.6.0/remixicon.css"
+      integrity="sha512-kJlvECunwXftkPwyvHbclArO8wszgBGisiLeuDFwNM8ws+wKIw0sv1os3ClWZOcrEB2eRXULYUsm8OVRGJKwGA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
     />
     <!-- Add Typed.js script -->
     <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
     <link rel="stylesheet" href="styles.css" />
     <script src="script.js"></script>
-</head>
+  </head>
 
-<body class="overflow-x-hidden font-serif text-white bg-zinc-950 scroll-smooth">
+  <body
+    class="overflow-x-hidden font-serif text-white bg-zinc-950 scroll-smooth"
+  >
     <!-- Navbar -->
     <div class="flex justify-center w-full">
-        <div class="z-[9999] fixed flex items-center px-6 py-6 transition-all duration-300 ease-in-out transform -translate-y-1/2 rounded-full shadow-xl bg-slate-700/50 md:left-auto w-fit bottom-0 md:top-1/2 backdrop-blur-xl hover:scale-105 md:right-8">
-            <nav>
-                <ul class="flex flex-row space-x-6 text-xl md:flex-col md:space-x-0 md:space-y-10">
-                    <li>
-                        <a href="#home" class="items-center cursor-pointer hover:text-white">
-                            <i class="ri-home-3-line"></i>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="#about" class="items-center cursor-pointer hover:text-white">
-                            <i class="ri-user-line"></i>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="#skill" class="items-center cursor-pointer hover:text-white">
-                            <i class="ri-blaze-line"></i>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="#projects" class="items-center cursor-pointer hover:text-white">
-                            <i class="ri-briefcase-3-line"></i>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="#contact" class="items-center cursor-pointer hover:text-white">
-                            <i class="ri-mail-line"></i>
-                        </a>
-                    </li>
-                </ul>
-            </nav>
-        </div>
+      <div
+        class="z-[9999] fixed flex items-center px-6 py-6 transition-all duration-300 ease-in-out transform -translate-y-1/2 rounded-full shadow-xl bg-slate-700/50 md:left-auto w-fit bottom-0 md:top-1/2 backdrop-blur-xl hover:scale-105 md:right-8"
+      >
+        <nav>
+          <ul
+            class="flex flex-row space-x-6 text-xl md:flex-col md:space-x-0 md:space-y-10"
+          >
+            <li>
+              <a
+                href="#home"
+                class="items-center cursor-pointer hover:text-white"
+              >
+                <i class="ri-home-3-line"></i>
+              </a>
+            </li>
+            <li>
+              <a
+                href="#about"
+                class="items-center cursor-pointer hover:text-white"
+              >
+                <i class="ri-user-line"></i>
+              </a>
+            </li>
+            <li>
+              <a
+                href="#skill"
+                class="items-center cursor-pointer hover:text-white"
+              >
+                <i class="ri-blaze-line"></i>
+              </a>
+            </li>
+            <li>
+              <a
+                href="#projects"
+                class="items-center cursor-pointer hover:text-white"
+              >
+                <i class="ri-briefcase-3-line"></i>
+              </a>
+            </li>
+            <li>
+              <a
+                href="#contact"
+                class="items-center cursor-pointer hover:text-white"
+              >
+                <i class="ri-mail-line"></i>
+              </a>
+            </li>
+          </ul>
+        </nav>
+      </div>
     </div>
 
     <!-- Home Section -->
-    <section id="home" class="relative z-0 flex flex-col justify-center w-full min-h-screen px-6 hero">
-        <!-- Background Decorations -->
-        <div class="absolute -top-64 -left-72 bg-orange-500 rounded-full opacity-50 w-[20rem] md:w-[60rem] h-[60rem]" style="filter: blur(20rem)"></div>
-        <div class="absolute h-[25rem] bg-indigo-600 rounded-full opacity-50 right-22 top-1/4 w-[17rem] md:rotate-45" style="filter: blur(10rem)"></div>
+    <section
+      id="home"
+      class="relative z-0 flex flex-col justify-center w-full min-h-screen px-6 hero"
+    >
+      <!-- Background Decorations -->
+      <div
+        class="absolute -top-64 -left-72 bg-orange-500 rounded-full opacity-50 w-[20rem] md:w-[60rem] h-[60rem]"
+        style="filter: blur(20rem)"
+      ></div>
+      <div
+        class="absolute h-[25rem] bg-indigo-600 rounded-full opacity-50 right-22 top-1/4 w-[17rem] md:rotate-45"
+        style="filter: blur(10rem)"
+      ></div>
 
-        <!-- Content Wrapper -->
-        <div class="relative flex flex-col items-center justify-center w-full gap-x-44 md:flex-row md:items-center">
-            <!-- Left: Hero Text -->
-            <div class="block mb-10 text-center md:text-left max-w-1/2 hero-text md:mb-0">
-                <h1 class="mb-2 text-2xl md:text-5xl">Hello, I'm</h1>
-                <span class="text-3xl font-extrabold text-indigo-700 md:text-7xl">Abdurrahman Faiz</span
+      <!-- Content Wrapper -->
+      <div
+        class="relative flex flex-col items-center justify-center w-full gap-x-44 md:flex-row md:items-center"
+      >
+        <!-- Left: Hero Text -->
+        <div
+          class="block mb-10 text-center md:text-left max-w-1/2 hero-text md:mb-0"
+        >
+          <h1 class="mb-2 text-2xl md:text-5xl">Hello, I'm</h1>
+          <span class="text-3xl font-extrabold text-indigo-700 md:text-7xl"
+            >Abdurrahman Faiz</span
           >
           <p class="my-2 text-xl font-semibold text-white">
             I'm a
             <span class="font-bold text-slate-400 typewriter-text"></span>
-                </p>
-                <p class="text-sm text-gray-200 md:text-lg">
-                    Creative Frontend Developer dedicated to creating stunning and user-friendly websites and experiences, <br /> as well as Backend Developer with experience across multiple platforms and frameworks.
-                </p>
-                <!-- Scroll Down -->
-                <div class="relative flex justify-center mt-6 md:justify-start">
-                    <a href="#about" class="flex items-center gap-2 px-4 py-2 text-white transition-all duration-300 bg-orange-500 rounded-lg shadow w-fit hover:bg-orange-600 focus:outline-none">
+          </p>
+          <p class="text-sm text-gray-200 md:text-lg">
+            Creative Frontend Developer dedicated to creating stunning and
+            user-friendly websites and experiences, <br />
+            as well as Backend Developer with experience across multiple
+            platforms and frameworks.
+          </p>
+          <!-- Scroll Down -->
+          <div class="relative flex justify-center mt-6 md:justify-start">
+            <a
+              href="#about"
+              class="flex items-center gap-2 px-4 py-2 text-white transition-all duration-300 bg-orange-500 rounded-lg shadow w-fit hover:bg-orange-600 focus:outline-none"
+            >
               Learn More <i class="ri-arrow-right-up-line"></i>
             </a>
-                </div>
-            </div>
-
-            <div class="relative wrp-pt">
-                <div class="relative z-20 w-64 h-64 overflow-hidden transition-all duration-300 transform bg-center bg-cover shadow-lg md:w-96 md:h-96 saturate-0 hover:saturate-100" style="background-image: url('img/me.jpeg')"></div>
-                <div class="absolute z-10 transform border-2 border-gray-400 rct rotate-[5deg] top-2 left-2 w-96 h-96 hidden md:block"></div>
-            </div>
+          </div>
         </div>
 
-        <div class="absolute left-0 right-0 flex justify-center bottom-32">
-            <div class="text-gray-400 scroll-down">
-                <i class="ri-arrow-down-double-line"></i>
-            </div>
+        <div class="relative wrp-pt">
+          <div
+            class="relative z-20 w-64 h-64 overflow-hidden transition-all duration-300 transform bg-center bg-cover shadow-lg md:w-96 md:h-96 saturate-0 hover:saturate-100"
+            style="background-image: url('img/me.jpeg')"
+          ></div>
+          <div
+            class="absolute z-10 transform border-2 border-gray-400 rct rotate-[5deg] top-2 left-2 w-96 h-96 hidden md:block"
+          ></div>
         </div>
+      </div>
+
+      <div class="absolute left-0 right-0 flex justify-center bottom-32">
+        <div class="text-gray-400 scroll-down">
+          <i class="ri-arrow-down-double-line"></i>
+        </div>
+      </div>
     </section>
 
-    <section id="about" class="flex justify-center w-full px-6 py-20 bg-slate-900" data-aos="fade-up">
-        <div class="flex flex-wrap justify-center gap-x-64">
-            <!-- Left Column -->
-            <div class="text-center md:text-start">
-                <h2 class="mb-6 text-4xl font-bold md:text-7xl">About Me</h2>
-                <h2 class="mb-6 text-base font-bold text-indigo-700 md:text-lg">
-                    Abdurrahman Faiz |
-                    <span class="text-green-500">Student | </span>
-                    <span class="text-amber-700">Web Developer</span>
-                </h2>
-                <p class="max-w-3xl mx-auto text-sm text-gray-400">
-                    I'm passionate about web development and love creating designs
-                    <span class="hidden md:inline"><br /></span> that combine functionality with beauty. With skills in multiple
-                    <span class="hidden md:inline"><br /></span> languages and frameworks, I focus on delivering high quality
-                    <span class="hidden md:inline"><br /></span> solutions that make an impact. I also have experience in Figma
-                    <span class="hidden md:inline"><br /></span> design and creating applications with other languages or frameworks.
-                </p>
-            </div>
-            <!-- Right Column -->
-            <div class="text-center md:text-start">
-                <h2 class="mb-6 text-3xl font-semibold md:text-5xl">
-                    Connect With Me
-                </h2>
-                <p class="max-w-3xl mx-auto mb-6 text-sm text-gray-400">
-                    I'm passionate about web development and love creating designs<br /> that combine functionality with beauty. With skills in multiple<br /> languages and frameworks, I focus on delivering high quality<br /> solutions that make an impact.
-                    I also have experience in Figma<br /> design and creating applications with other languages or frameworks.
-                </p>
-                <div class="flex flex-row justify-center gap-x-4 md:justify-normal">
-                    <a class="flex items-center justify-center w-10 h-10 border rounded-full border-slate-300 text-slate-300 hover:border-indigo-600 hover:bg-indigo-600 hover:text-white" href="https://github.com/AbdFaiz">
-                        <i class="text-2xl ri-github-line"></i>
-                    </a>
-                    <a class="flex items-center justify-center w-10 h-10 border rounded-full border-slate-300 text-slate-300 hover:border-indigo-600 hover:bg-indigo-600 hover:text-white" href="https://www.instagram.com/4o4nf_/">
-                        <i class="text-2xl ri-instagram-line"></i>
-                    </a>
-                    <a class="flex items-center justify-center w-10 h-10 border rounded-full border-slate-300 text-slate-300 hover:border-indigo-600 hover:bg-indigo-600 hover:text-white" href="https://www.x.com/aois187/">
-                        <i class="text-2xl ri-twitter-line"></i>
-                    </a>
-                    <a class="flex items-center justify-center w-10 h-10 border rounded-full border-slate-300 text-slate-300 hover:border-indigo-600 hover:bg-indigo-600 hover:text-white" href="https://www.tiktok.com/@abd.ffz/">
-                        <i class="text-2xl ri-tiktok-line"></i>
-                    </a>
-                    <a class="flex items-center justify-center w-10 h-10 border rounded-full border-slate-300 text-slate-300 hover:border-indigo-600 hover:bg-indigo-600 hover:text-white" href="https://www.youtube.com/@abdurrahmanfaiz635">
-                        <i class="text-2xl ri-youtube-line"></i>
-                    </a>
-                </div>
-            </div>
+    <section
+      id="about"
+      class="flex justify-center w-full px-6 py-20 bg-slate-900"
+      data-aos="fade-up"
+    >
+      <div class="flex flex-wrap justify-center gap-x-64">
+        <!-- Left Column -->
+        <div class="text-center md:text-start">
+          <h2 class="mb-6 text-4xl font-bold md:text-7xl">About Me</h2>
+          <h2 class="mb-6 text-base font-bold text-indigo-700 md:text-lg">
+            Abdurrahman Faiz |
+            <span class="text-green-500">Student | </span>
+            <span class="text-amber-700">Web Developer</span>
+          </h2>
+          <p class="max-w-3xl mx-auto text-sm text-gray-400">
+            I'm passionate about web development and love creating designs
+            <span class="hidden md:inline"><br /></span> that combine
+            functionality with beauty. With skills in multiple
+            <span class="hidden md:inline"><br /></span> languages and
+            frameworks, I focus on delivering high quality
+            <span class="hidden md:inline"><br /></span> solutions that make an
+            impact. I also have experience in Figma
+            <span class="hidden md:inline"><br /></span> design and creating
+            applications with other languages or frameworks.
+          </p>
         </div>
+        <!-- Right Column -->
+        <div class="text-center md:text-start">
+          <h2 class="mb-6 text-3xl font-semibold md:text-5xl">
+            Connect With Me
+          </h2>
+          <p class="max-w-3xl mx-auto mb-6 text-sm text-gray-400">
+            I'm passionate about web development and love creating designs<br />
+            that combine functionality with beauty. With skills in multiple<br />
+            languages and frameworks, I focus on delivering high quality<br />
+            solutions that make an impact. I also have experience in Figma<br />
+            design and creating applications with other languages or frameworks.
+          </p>
+          <div class="flex flex-row justify-center gap-x-4 md:justify-normal">
+            <a
+              class="flex items-center justify-center w-10 h-10 border rounded-full border-slate-300 text-slate-300 hover:border-indigo-600 hover:bg-indigo-600 hover:text-white"
+              href="https://github.com/AbdFaiz"
+            >
+              <i class="text-2xl ri-github-line"></i>
+            </a>
+            <a
+              class="flex items-center justify-center w-10 h-10 border rounded-full border-slate-300 text-slate-300 hover:border-indigo-600 hover:bg-indigo-600 hover:text-white"
+              href="https://www.instagram.com/4o4nf_/"
+            >
+              <i class="text-2xl ri-instagram-line"></i>
+            </a>
+            <a
+              class="flex items-center justify-center w-10 h-10 border rounded-full border-slate-300 text-slate-300 hover:border-indigo-600 hover:bg-indigo-600 hover:text-white"
+              href="https://www.x.com/aois187/"
+            >
+              <i class="text-2xl ri-twitter-line"></i>
+            </a>
+            <a
+              class="flex items-center justify-center w-10 h-10 border rounded-full border-slate-300 text-slate-300 hover:border-indigo-600 hover:bg-indigo-600 hover:text-white"
+              href="https://www.tiktok.com/@abd.ffz/"
+            >
+              <i class="text-2xl ri-tiktok-line"></i>
+            </a>
+            <a
+              class="flex items-center justify-center w-10 h-10 border rounded-full border-slate-300 text-slate-300 hover:border-indigo-600 hover:bg-indigo-600 hover:text-white"
+              href="https://www.youtube.com/@abdurrahmanfaiz635"
+            >
+              <i class="text-2xl ri-youtube-line"></i>
+            </a>
+          </div>
+        </div>
+      </div>
     </section>
 
     <!-- Skills section -->
-    <section id="skill" class="relative flex flex-col items-center justify-center min-h-screen px-6 py-16 text-white bg-zinc-900" data-aos="fade-up">
-        <div class="absolute top-10 -left-72 bg-orange-700 rounded-full opacity-50 w-[10rem] md:w-[60rem] h-[40rem]" style="filter: blur(10rem)"></div>
-        <div class="absolute h-[3rem] bg-green-600 rounded-full opacity-30 -right-0 top-1/2 w-[60rem] rotate-45" style="filter: blur(10rem)"></div>
+    <section
+      id="skill"
+      class="relative flex flex-col items-center justify-center min-h-screen px-6 py-16 text-white bg-zinc-900"
+      data-aos="fade-up"
+    >
+      <div
+        class="absolute top-10 -left-72 bg-orange-700 rounded-full opacity-50 w-[10rem] md:w-[60rem] h-[40rem]"
+        style="filter: blur(10rem)"
+      ></div>
+      <div
+        class="absolute h-[3rem] bg-green-600 rounded-full opacity-30 -right-0 top-1/2 w-[60rem] rotate-45"
+        style="filter: blur(10rem)"
+      ></div>
 
-        <!-- Section Title -->
-        <h2 class="relative z-50 mb-10 text-2xl font-bold tracking-widest text-center uppercase md:text-5xl">
-            My Skills
-        </h2>
+      <!-- Section Title -->
+      <h2
+        class="relative z-50 mb-10 text-2xl font-bold tracking-widest text-center uppercase md:text-5xl"
+      >
+        My Skills
+      </h2>
 
-        <!-- Skill Grid -->
-        <div class="relative z-50 grid w-full max-w-4xl grid-cols-1 gap-8 md:grid-cols-3">
-            <!-- Skill Item -->
-            <div onclick="openModal('Programming', 'PHP, Dart, JavaScript, Python', 'ri-code-line')" class="flex flex-col items-center justify-center gap-2 p-6 text-center transition-transform duration-300 transform rounded-lg shadow-lg cursor-pointer bg-zinc-800 hover:scale-105">
-                <i class="text-5xl text-indigo-500 ri-code-line"></i>
-                <h3 class="text-lg font-semibold">Programming</h3>
-                <p class="text-sm text-gray-400">PHP, Dart, JavaScript, Python</p>
-            </div>
-            <!-- Skill Item -->
-            <div onclick="openModal('Database', 'MySQL, SQLite', 'ri-database-line')" class="flex flex-col items-center justify-center gap-2 p-6 text-center transition-transform duration-300 transform rounded-lg shadow-lg cursor-pointer bg-zinc-800 hover:scale-105">
-                <i class="text-5xl text-green-500 ri-database-line"></i>
-                <h3 class="text-lg font-semibold">Database</h3>
-                <p class="text-sm text-gray-400">MySQL, SQLite, MongoDB</p>
-            </div>
-            <!-- Skill Item -->
-            <div onclick="openModal('Frameworks', 'Laravel, Flutter, Bootstrap, Tailwind, Fast API, React, Vue', 'ri-stack-line')" class="flex flex-col items-center justify-center gap-2 p-6 text-center transition-transform duration-300 transform rounded-lg shadow-lg cursor-pointer bg-zinc-800 hover:scale-105">
-                <i class="text-5xl text-blue-500 ri-stack-line"></i>
-                <h3 class="text-lg font-semibold">Frameworks</h3>
-                <p class="text-sm text-gray-400">
-                    Laravel, Flutter, Bootstrap, Tailwind, Fast API, Vue
-                </p>
-            </div>
-            <!-- Skill Item -->
-            <div onclick="openModal('Design', 'Figma, CorelDraw, Illustrator', 'ri-paint-brush-line')" class="flex flex-col items-center justify-center gap-2 p-6 text-center transition-transform duration-300 transform rounded-lg shadow-lg cursor-pointer bg-zinc-800 hover:scale-105">
-                <i class="text-5xl text-pink-500 ri-paint-brush-line"></i>
-                <h3 class="text-lg font-semibold">Design</h3>
-                <p class="text-sm text-gray-400">Figma, CorelDraw, Illustrator</p>
-            </div>
-            <!-- Skill Item -->
-            <div onclick="openModal('Version Control', 'Git, Github', 'ri-terminal-box-line')" class="flex flex-col items-center justify-center gap-2 p-6 text-center transition-transform duration-300 transform rounded-lg shadow-lg cursor-pointer bg-zinc-800 hover:scale-105">
-                <i class="text-5xl text-red-500 ri-terminal-box-line"></i>
-                <h3 class="text-lg font-semibold">Version Control</h3>
-                <p class="text-sm text-gray-400">Git, GitHub</p>
-            </div>
-            <!-- Skill Item -->
-            <div onclick="openModal('Tools', 'Postman, VS Code, Nginx', 'ri-settings-2-line')" class="flex flex-col items-center justify-center gap-2 p-6 text-center transition-transform duration-300 transform rounded-lg shadow-lg cursor-pointer bg-zinc-800 hover:scale-105">
-                <i class="text-5xl text-yellow-500 ri-settings-2-line"></i>
-                <h3 class="text-lg font-semibold">Tools</h3>
-                <p class="text-sm text-gray-400">Postman, VS Code, Nginx</p>
-            </div>
+      <!-- Skill Grid -->
+      <div
+        class="relative z-50 grid w-full max-w-4xl grid-cols-1 gap-8 md:grid-cols-3"
+      >
+        <!-- Skill Item -->
+        <div
+          onclick="openModal('Programming', 'PHP, Dart, JavaScript, Python', 'ri-code-line')"
+          class="flex flex-col items-center justify-center gap-2 p-6 text-center transition-transform duration-300 transform rounded-lg shadow-lg cursor-pointer bg-zinc-800 hover:scale-105"
+        >
+          <i class="text-5xl text-indigo-500 ri-code-line"></i>
+          <h3 class="text-lg font-semibold">Programming</h3>
+          <p class="text-sm text-gray-400">PHP, Dart, JavaScript, Python</p>
         </div>
-        <div id="skill-modal" class="fixed inset-0 z-50 flex items-center justify-center hidden bg-black/30 backdrop-blur-lg">
-            <div id="modal-content" class="p-6 text-white transition-all duration-300 transform scale-90 flex items-center justify-center rounded-lg shadow-lg bg-zinc-800/30 w-[90%] h-fit md:w-[30%] md:h-[30%] backdrop-blur-lg">
-                <button onclick="closeModal()" class="absolute text-2xl text-gray-400 top-4 right-4 hover:text-white">
+        <!-- Skill Item -->
+        <div
+          onclick="openModal('Database', 'MySQL, SQLite, MongoDB', 'ri-database-line')"
+          class="flex flex-col items-center justify-center gap-2 p-6 text-center transition-transform duration-300 transform rounded-lg shadow-lg cursor-pointer bg-zinc-800 hover:scale-105"
+        >
+          <i class="text-5xl text-green-500 ri-database-line"></i>
+          <h3 class="text-lg font-semibold">Database</h3>
+          <p class="text-sm text-gray-400">MySQL, SQLite, MongoDB</p>
+        </div>
+        <!-- Skill Item -->
+        <div
+          onclick="openModal('Frameworks', 'Laravel, Flutter, Bootstrap, Tailwind, Fast API, Vue', 'ri-stack-line')"
+          class="flex flex-col items-center justify-center gap-2 p-6 text-center transition-transform duration-300 transform rounded-lg shadow-lg cursor-pointer bg-zinc-800 hover:scale-105"
+        >
+          <i class="text-5xl text-blue-500 ri-stack-line"></i>
+          <h3 class="text-lg font-semibold">Frameworks</h3>
+          <p class="text-sm text-gray-400">
+            Laravel, Flutter, Bootstrap, Tailwind, Fast API, Vue
+          </p>
+        </div>
+        <!-- Skill Item -->
+        <div
+          onclick="openModal('Design', 'Figma, Photoshop, Illustrator', 'ri-paint-brush-line')"
+          class="flex flex-col items-center justify-center gap-2 p-6 text-center transition-transform duration-300 transform rounded-lg shadow-lg cursor-pointer bg-zinc-800 hover:scale-105"
+        >
+          <i class="text-5xl text-pink-500 ri-paint-brush-line"></i>
+          <h3 class="text-lg font-semibold">Design</h3>
+          <p class="text-sm text-gray-400">Figma, Photoshop, Illustrator</p>
+        </div>
+        <!-- Skill Item -->
+        <div
+          onclick="openModal('Version Control', 'Git, Github', 'ri-terminal-box-line')"
+          class="flex flex-col items-center justify-center gap-2 p-6 text-center transition-transform duration-300 transform rounded-lg shadow-lg cursor-pointer bg-zinc-800 hover:scale-105"
+        >
+          <i class="text-5xl text-red-500 ri-terminal-box-line"></i>
+          <h3 class="text-lg font-semibold">Version Control</h3>
+          <p class="text-sm text-gray-400">Git, GitHub</p>
+        </div>
+        <!-- Skill Item -->
+        <div
+          onclick="openModal('Tools', 'Postman, VS Code, Nginx', 'ri-settings-2-line')"
+          class="flex flex-col items-center justify-center gap-2 p-6 text-center transition-transform duration-300 transform rounded-lg shadow-lg cursor-pointer bg-zinc-800 hover:scale-105"
+        >
+          <i class="text-5xl text-yellow-500 ri-settings-2-line"></i>
+          <h3 class="text-lg font-semibold">Tools</h3>
+          <p class="text-sm text-gray-400">Postman, VS Code, Nginx</p>
+        </div>
+      </div>
+      <div
+        id="skill-modal"
+        class="fixed inset-0 z-50 flex items-center justify-center hidden bg-black/30 backdrop-blur-lg"
+      >
+        <div
+          id="modal-content"
+          class="p-6 text-white transition-all duration-300 transform scale-90 flex items-center justify-center rounded-lg shadow-lg bg-zinc-800/30 w-[90%] h-fit md:w-[30%] md:h-[30%] backdrop-blur-lg"
+        >
+          <button
+            onclick="closeModal()"
+            class="absolute text-2xl text-gray-400 top-4 right-4 hover:text-white"
+          >
             &times;
           </button>
-                <div class="flex flex-col items-center justify-center gap-4">
-                    <i id="modal-icon" class="text-4xl text-indigo-500 md:text-6xl"></i>
-                    <h3 id="modal-title" class="text-xl font-semibold md:text-2xl"></h3>
-                    <p id="modal-description" class="text-sm text-center text-gray-400 md:text-base"></p>
-                </div>
-            </div>
+          <div class="flex flex-col items-center justify-center gap-4">
+            <i id="modal-icon" class="text-4xl text-indigo-500 md:text-6xl"></i>
+            <h3 id="modal-title" class="text-xl font-semibold md:text-2xl"></h3>
+            <p
+              id="modal-description"
+              class="text-sm text-center text-gray-400 md:text-base"
+            ></p>
+          </div>
         </div>
+      </div>
     </section>
 
     <!-- Projects Section -->
-    <section id="projects" class="w-full px-6 py-20 bg-gradient-to-r from-blue-800/30 to-indigo-900/30">
-        <div class="container mx-auto text-center" data-aos="fade-up">
-            <!-- Section Title -->
-            <h2 class="mb-12 text-5xl font-bold tracking-widest text-white uppercase">
-                My Projects
-            </h2>
+    <section
+      id="projects"
+      class="w-full px-6 py-20 bg-gradient-to-r from-blue-800/30 to-indigo-900/30"
+    >
+      <div class="container mx-auto text-center" data-aos="fade-up">
+        <!-- Section Title -->
+        <h2
+          class="mb-12 text-5xl font-bold tracking-widest text-white uppercase"
+        >
+          My Projects
+        </h2>
 
-            <!-- Project Grid -->
-            <div class="grid grid-cols-1 gap-12 md:grid-cols-2 lg:grid-cols-3">
-                <!-- Project Item -->
-                <div class="relative overflow-hidden rounded-lg shadow-lg group bg-zinc-800">
-                    <img src="img/project1.png" alt="Project 1" class="object-cover w-full h-64 transition-transform duration-300 group-hover:scale-110" />
-                    <div class="absolute inset-0 flex flex-col items-center justify-center transition-all duration-300 bg-black bg-opacity-50 opacity-0 group-hover:bg-opacity-90 group-hover:opacity-100">
-                        <h3 class="text-2xl font-semibold text-white">Attendance Web</h3>
-                        <p class="text-xs text-white">
-                            Division attendance and attendance monitoring in PT using laravel
-                        </p>
-                    </div>
-                </div>
-                <!-- Project Item -->
-                <div class="relative overflow-hidden rounded-lg shadow-lg group bg-zinc-800">
-                    <img src="img/project2.png" alt="Project 2" class="object-cover w-full h-64 transition-transform duration-300 group-hover:scale-110" />
-                    <div class="absolute inset-0 flex flex-col items-center justify-center transition-all duration-300 bg-black bg-opacity-50 opacity-0 group-hover:bg-opacity-90 group-hover:opacity-100">
-                        <h3 class="text-2xl font-semibold text-white">Stack Overflow</h3>
-                        <p class="text-xs text-white">
-                            Make a duplicate stack overflow using laravel
-                        </p>
-                    </div>
-                </div>
-                <!-- Project Item -->
-                <div class="relative overflow-hidden rounded-lg shadow-lg group bg-zinc-800">
-                    <img src="img/project3.png" alt="Project 3" class="object-cover w-full h-64 transition-transform duration-300 group-hover:scale-110" />
-                    <div class="absolute inset-0 flex flex-col items-center justify-center transition-all duration-300 bg-black bg-opacity-50 opacity-0 group-hover:bg-opacity-90 group-hover:opacity-100">
-                        <h3 class="text-2xl font-semibold text-white">Prayers time</h3>
-                        <p class="text-xs text-white">
-                            Prayers time in various city in Indonesia using API, JS, and Taiwind framework
-                        </p>
-                    </div>
-                </div>
-                <!-- Project Item -->
-                <div class="relative overflow-hidden rounded-lg shadow-lg group bg-zinc-800">
-                    <img src="img/project4.png" alt="Project 4" class="object-cover w-full h-64 transition-transform duration-300 group-hover:scale-110" />
-                    <div class="absolute inset-0 flex flex-col items-center justify-center transition-all duration-300 bg-black bg-opacity-50 opacity-0 group-hover:bg-opacity-90 group-hover:opacity-100">
-                        <h3 class="text-2xl font-semibold text-white">
-                            IOT Monitoring websites
-                        </h3>
-                        <p class="text-xs text-white">
-                            Monitoring iot status using node-red as backend and parse data, js and tailwind for dashboard
-                        </p>
-                    </div>
-                </div>
-                <!-- Project Item -->
-                <div class="relative overflow-hidden rounded-lg shadow-lg group bg-zinc-800">
-                    <img src="img/project5.png" alt="Project 5" class="object-cover w-full h-64 transition-transform duration-300 group-hover:scale-110" />
-                    <div class="absolute inset-0 flex flex-col items-center justify-center transition-all duration-300 bg-black bg-opacity-50 opacity-0 group-hover:bg-opacity-90 group-hover:opacity-100">
-                        <h3 class="text-2xl font-semibold text-white">School Mart</h3>
-                        <p class="px-2 text-xs text-wfa-highlighter">
-                            Web to purchase food, drinks, and stationery for a school. consists of 4 roles, namely admin, bank, canteen, and user or student.
-                        </p>
-                    </div>
-                </div>
-                <!-- Project Item -->
-                <div class="relative overflow-hidden rounded-lg shadow-lg group bg-zinc-800">
-                    <img src="img/project6.png" alt="Project 5" class="object-cover w-full h-64 transition-transform duration-300 group-hover:scale-110" />
-                    <div class="absolute inset-0 flex flex-col items-center justify-center transition-all duration-300 bg-black bg-opacity-50 opacity-0 group-hover:bg-opacity-90 group-hover:opacity-100">
-                        <h3 class="text-2xl font-semibold text-white">Task management</h3>
-                        <p class="px-2 text-xs text-wfa-highlighter">
-                            Web to manage a task for student.
-                        </p>
-                    </div>
-                </div>
+        <!-- Project Grid -->
+        <div class="grid grid-cols-1 gap-12 md:grid-cols-2 lg:grid-cols-3">
+          <!-- Project Item -->
+          <div
+            class="relative overflow-hidden rounded-lg shadow-lg group bg-zinc-800"
+          >
+            <img
+              src="img/project1.png"
+              alt="Project 1"
+              class="object-cover w-full h-64 transition-transform duration-300 group-hover:scale-110"
+            />
+            <div
+              class="absolute inset-0 flex flex-col items-center justify-center transition-all duration-300 bg-black bg-opacity-50 opacity-0 group-hover:bg-opacity-90 group-hover:opacity-100"
+            >
+              <h3 class="text-2xl font-semibold text-white">Attendance Web</h3>
+              <p class="text-xs text-white">
+                Division attendance and attendance monitoring in PT using
+                laravel
+              </p>
             </div>
+          </div>
+          <!-- Project Item -->
+          <div
+            class="relative overflow-hidden rounded-lg shadow-lg group bg-zinc-800"
+          >
+            <img
+              src="img/project2.png"
+              alt="Project 2"
+              class="object-cover w-full h-64 transition-transform duration-300 group-hover:scale-110"
+            />
+            <div
+              class="absolute inset-0 flex flex-col items-center justify-center transition-all duration-300 bg-black bg-opacity-50 opacity-0 group-hover:bg-opacity-90 group-hover:opacity-100"
+            >
+              <h3 class="text-2xl font-semibold text-white">Stack Overflow</h3>
+              <p class="text-xs text-white">
+                Make a duplicate stack overflow using laravel
+              </p>
+            </div>
+          </div>
+          <!-- Project Item -->
+          <div
+            class="relative overflow-hidden rounded-lg shadow-lg group bg-zinc-800"
+          >
+            <img
+              src="img/project3.png"
+              alt="Project 3"
+              class="object-cover w-full h-64 transition-transform duration-300 group-hover:scale-110"
+            />
+            <div
+              class="absolute inset-0 flex flex-col items-center justify-center transition-all duration-300 bg-black bg-opacity-50 opacity-0 group-hover:bg-opacity-90 group-hover:opacity-100"
+            >
+              <h3 class="text-2xl font-semibold text-white">Prayers time</h3>
+              <p class="text-xs text-white">
+                Prayers time in various city in Indonesia using API, JS, and
+                Taiwind framework
+              </p>
+            </div>
+          </div>
+          <!-- Project Item -->
+          <div
+            class="relative overflow-hidden rounded-lg shadow-lg group bg-zinc-800"
+          >
+            <img
+              src="img/project4.png"
+              alt="Project 4"
+              class="object-cover w-full h-64 transition-transform duration-300 group-hover:scale-110"
+            />
+            <div
+              class="absolute inset-0 flex flex-col items-center justify-center transition-all duration-300 bg-black bg-opacity-50 opacity-0 group-hover:bg-opacity-90 group-hover:opacity-100"
+            >
+              <h3 class="text-2xl font-semibold text-white">
+                IOT Monitoring websites
+              </h3>
+              <p class="text-xs text-white">
+                Monitoring iot status using node-red as backend and parse data,
+                js and tailwind for dashboard
+              </p>
+            </div>
+          </div>
+          <!-- Project Item -->
+          <div
+            class="relative overflow-hidden rounded-lg shadow-lg group bg-zinc-800"
+          >
+            <img
+              src="img/project5.png"
+              alt="Project 5"
+              class="object-cover w-full h-64 transition-transform duration-300 group-hover:scale-110"
+            />
+            <div
+              class="absolute inset-0 flex flex-col items-center justify-center transition-all duration-300 bg-black bg-opacity-50 opacity-0 group-hover:bg-opacity-90 group-hover:opacity-100"
+            >
+              <h3 class="text-2xl font-semibold text-white">School Mart</h3>
+              <p class="px-2 text-xs text-wfa-highlighter">
+                Web to purchase food, drinks, and stationery for a school.
+                consists of 4 roles, namely admin, bank, canteen, and user or
+                student.
+              </p>
+            </div>
+          </div>
+          <!-- Project Item -->
+          <div
+            class="relative overflow-hidden rounded-lg shadow-lg group bg-zinc-800"
+          >
+            <img
+              src="img/project6.png"
+              alt="Project 5"
+              class="object-cover w-full h-64 transition-transform duration-300 group-hover:scale-110"
+            />
+            <div
+              class="absolute inset-0 flex flex-col items-center justify-center transition-all duration-300 bg-black bg-opacity-50 opacity-0 group-hover:bg-opacity-90 group-hover:opacity-100"
+            >
+              <h3 class="text-2xl font-semibold text-white">Task management</h3>
+              <p class="px-2 text-xs text-wfa-highlighter">
+                Web to manage a task for student.
+              </p>
+            </div>
+          </div>
+        </div>
 
-            <!-- View More Button -->
-            <div class="mt-12">
-                <a href="project.html" class="px-6 py-3 text-xl font-semibold text-white transition-all duration-300 bg-blue-600 rounded-full hover:bg-blue-700">
+        <!-- View More Button -->
+        <div class="mt-12">
+          <a
+            href="project.html"
+            class="px-6 py-3 text-xl font-semibold text-white transition-all duration-300 bg-blue-600 rounded-full hover:bg-blue-700"
+          >
             View More Projects
           </a>
-            </div>
         </div>
+      </div>
     </section>
 
     <!-- Contact Section -->
-    <section id="contact" class="flex items-center justify-center w-full py-20 bg-gray-800">
-        <div class="container flex flex-col items-center justify-between gap-12 px-6 mx-auto text-center md:flex-row md:text-left" data-aos="fade-up">
-            <!-- Left Section -->
-            <div class="md:w-1/2">
-                <h1 class="mb-4 text-4xl font-bold md:text-6xl">
-                    Let's get started.
-                </h1>
-                <p class="mb-2 text-sm tracking-wide text-gray-400 uppercase">
-                    Basic contact form
-                </p>
-                <p class="text-lg text-white tracking-md">
-                    Or contact me in -
-                    <a href="mailto:abdurrahmanfaiz187@gmail.com" class="text-indigo-500"><i class="text-2xl ri-mail-line"></i
+    <section
+      id="contact"
+      class="flex items-center justify-center w-full py-20 bg-gray-800"
+    >
+      <div
+        class="container flex flex-col items-center justify-between gap-12 px-6 mx-auto text-center md:flex-row md:text-left"
+        data-aos="fade-up"
+      >
+        <!-- Left Section -->
+        <div class="md:w-1/2">
+          <h1 class="mb-4 text-4xl font-bold md:text-6xl">
+            Let's get started.
+          </h1>
+          <p class="mb-2 text-sm tracking-wide text-gray-400 uppercase">
+            Basic contact form
+          </p>
+          <p class="text-lg text-white tracking-md">
+            Or contact me in -
+            <a
+              href="mailto:abdurrahmanfaiz187@gmail.com"
+              class="text-indigo-500"
+              ><i class="text-2xl ri-mail-line"></i
             ></a>
-                    <a href="https://instagram.com/4o4nf_/" class="text-indigo-500"><i class="text-2xl ri-instagram-line"></i
+            <a href="https://instagram.com/4o4nf_/" class="text-indigo-500"
+              ><i class="text-2xl ri-instagram-line"></i
             ></a>
-                    <a href="https://x.com/aois187/" class="text-indigo-500"><i class="text-2xl ri-twitter-line"></i
+            <a href="https://x.com/aois187/" class="text-indigo-500"
+              ><i class="text-2xl ri-twitter-line"></i
             ></a>
-                </p>
+          </p>
+        </div>
+        <!-- Right Section -->
+        <div class="mt-3 md:w-1/2 md:mt-0">
+          <form class="space-y-6 text-xl" id="contactForm">
+            <!-- Name Field -->
+            <div class="flex flex-wrap items-center justify-start">
+              <label class="mr-2" for="name">My name is</label>
+              <input
+                type="text"
+                id="name"
+                name="name"
+                placeholder="Your full name"
+                class="transition-all bg-transparent border-b border-gray-600 outline-none w-fit focus:border-white md:w-fit"
+                required
+              />
+              <span class="ml-2">and I have a</span>
             </div>
-            <!-- Right Section -->
-            <div class="mt-3 md:w-1/2 md:mt-0">
-                <form class="space-y-6 text-xl" id="contactForm">
-                    <!-- Name Field -->
-                    <div class="flex flex-wrap items-center justify-start">
-                        <label class="mr-2" for="name">My name is</label>
-                        <input type="text" id="name" name="name" placeholder="Your full name" class="transition-all bg-transparent border-b border-gray-600 outline-none w-fit focus:border-white md:w-fit" required />
-                        <span class="ml-2">and I have a</span>
-                    </div>
-                    <!-- Job/Need Field -->
-                    <div class="flex flex-wrap items-center justify-start">
-                        <input type="text" id="need" name="need" placeholder="Website, Full-time Job, etc." class="transition-all bg-transparent border-b border-gray-600 outline-none w-fit focus:border-white md:w-fit" required />
-                        <span class="ml-2">that needs help. You can reach</span>
-                    </div>
-                    <!-- Email Field -->
-                    <div class="flex flex-wrap items-center justify-start">
-                        <label class="mr-2" for="email">me at</label>
-                        <input type="email" id="email" name="email" placeholder="Your email address" class="transition-all bg-transparent border-b border-gray-600 outline-none w-fit focus:border-white md:w-fit" required />
-                        <span class="ml-2">to get things started.</span>
-                    </div>
-                    <!-- Submit Button -->
-                    <button onclick="sendEmail(event)" type="submit" class="text-sm tracking-wider text-white uppercase transition-all hover:border-white">
+            <!-- Job/Need Field -->
+            <div class="flex flex-wrap items-center justify-start">
+              <input
+                type="text"
+                id="need"
+                name="need"
+                placeholder="Website, Full-time Job, etc."
+                class="transition-all bg-transparent border-b border-gray-600 outline-none w-fit focus:border-white md:w-fit"
+                required
+              />
+              <span class="ml-2">that needs help. You can reach</span>
+            </div>
+            <!-- Email Field -->
+            <div class="flex flex-wrap items-center justify-start">
+              <label class="mr-2" for="email">me at</label>
+              <input
+                type="email"
+                id="email"
+                name="email"
+                placeholder="Your email address"
+                class="transition-all bg-transparent border-b border-gray-600 outline-none w-fit focus:border-white md:w-fit"
+                required
+              />
+              <span class="ml-2">to get things started.</span>
+            </div>
+            <!-- Submit Button -->
+            <button
+              onclick="sendEmail(event)"
+              type="submit"
+              class="text-sm tracking-wider text-white uppercase transition-all hover:border-white"
+            >
               — Send Info
             </button>
-                </form>
-            </div>
+          </form>
         </div>
+      </div>
     </section>
 
     <!-- Footer -->
     <footer class="py-4 text-center text-gray-500 bg-gray-900">
-        &copy; 2025 Created By Abdurrahman Faiz
+      &copy; 2025 Created By Abdurrahman Faiz
     </footer>
 
     <script>
-        const openModal = (title, description, iconClass) => {
-            document.getElementById("modal-title").innerText = title;
-            document.getElementById("modal-description").innerText = description;
-            document.getElementById(
-                "modal-icon"
-            ).className = `text-6xl ${iconClass}`;
-            const modal = document.getElementById("skill-modal");
-            const modalContent = document.getElementById("modal-content");
-            modal.classList.remove("hidden");
-            setTimeout(() => {
-                modalContent.classList.remove("scale-90", "opacity-0");
-                modalContent.classList.add("scale-100", "opacity-100");
-            }, 10);
-        };
-        const closeModal = () => {
-            const modal = document.getElementById("skill-modal");
-            const modalContent = document.getElementById("modal-content");
-            modalContent.classList.remove("scale-100", "opacity-100");
-            modalContent.classList.add("scale-90", "opacity-0");
-            setTimeout(() => modal.classList.add("hidden"), 300);
-        };
+      const openModal = (title, description, iconClass) => {
+        document.getElementById("modal-title").innerText = title;
+        document.getElementById("modal-description").innerText = description;
+        document.getElementById(
+          "modal-icon"
+        ).className = `text-6xl ${iconClass}`;
+        const modal = document.getElementById("skill-modal");
+        const modalContent = document.getElementById("modal-content");
+        modal.classList.remove("hidden");
+        setTimeout(() => {
+          modalContent.classList.remove("scale-90", "opacity-0");
+          modalContent.classList.add("scale-100", "opacity-100");
+        }, 10);
+      };
+      const closeModal = () => {
+        const modal = document.getElementById("skill-modal");
+        const modalContent = document.getElementById("modal-content");
+        modalContent.classList.remove("scale-100", "opacity-100");
+        modalContent.classList.add("scale-90", "opacity-0");
+        setTimeout(() => modal.classList.add("hidden"), 300);
+      };
     </script>
-</body>
-
+  </body>
 </html>
