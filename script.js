@@ -32,6 +32,27 @@ document.addEventListener("DOMContentLoaded", function() {
     var typed = new Typed(".typewriter-text", options);
 
 });
+const openModal = (title, description, iconClass) => {
+    document.getElementById("modal-title").innerText = title;
+    document.getElementById("modal-description").innerText = description;
+    document.getElementById(
+        "modal-icon"
+    ).className = `text-6xl ${iconClass}`;
+    const modal = document.getElementById("skill-modal");
+    const modalContent = document.getElementById("modal-content");
+    modal.classList.remove("hidden");
+    setTimeout(() => {
+        modalContent.classList.remove("scale-90", "opacity-0");
+        modalContent.classList.add("scale-100", "opacity-100");
+    }, 10);
+};
+const closeModal = () => {
+    const modal = document.getElementById("skill-modal");
+    const modalContent = document.getElementById("modal-content");
+    modalContent.classList.remove("scale-100", "opacity-100");
+    modalContent.classList.add("scale-90", "opacity-0");
+    setTimeout(() => modal.classList.add("hidden"), 300);
+};
 
 function sendEmail(event) {
     event.preventDefault();

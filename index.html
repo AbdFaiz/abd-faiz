@@ -442,18 +442,16 @@
             class="relative overflow-hidden rounded-lg shadow-lg group bg-zinc-800"
           >
             <img
-              src="img/project5.png"
+              src="img/project7.png"
               alt="Project 5"
               class="object-cover w-full h-64 transition-transform duration-300 group-hover:scale-110"
             />
             <div
               class="absolute inset-0 flex flex-col items-center justify-center transition-all duration-300 bg-black bg-opacity-50 opacity-0 group-hover:bg-opacity-90 group-hover:opacity-100"
             >
-              <h3 class="text-2xl font-semibold text-white">School Mart</h3>
+              <h3 class="text-2xl font-semibold text-white">Fintech Web</h3>
               <p class="px-2 text-xs text-wfa-highlighter">
-                Web to purchase food, drinks, and stationery for a school.
-                consists of 4 roles, namely admin, bank, canteen, and user or
-                student.
+                Web-based banking management system for schools using Laravel.
               </p>
             </div>
           </div>
@@ -580,28 +578,6 @@
       &copy; 2025 Created By Abdurrahman Faiz
     </footer>
 
-    <script>
-      const openModal = (title, description, iconClass) => {
-        document.getElementById("modal-title").innerText = title;
-        document.getElementById("modal-description").innerText = description;
-        document.getElementById(
-          "modal-icon"
-        ).className = `text-6xl ${iconClass}`;
-        const modal = document.getElementById("skill-modal");
-        const modalContent = document.getElementById("modal-content");
-        modal.classList.remove("hidden");
-        setTimeout(() => {
-          modalContent.classList.remove("scale-90", "opacity-0");
-          modalContent.classList.add("scale-100", "opacity-100");
-        }, 10);
-      };
-      const closeModal = () => {
-        const modal = document.getElementById("skill-modal");
-        const modalContent = document.getElementById("modal-content");
-        modalContent.classList.remove("scale-100", "opacity-100");
-        modalContent.classList.add("scale-90", "opacity-0");
-        setTimeout(() => modal.classList.add("hidden"), 300);
-      };
-    </script>
+    <script src="script.js"></script>
   </body>
 </html>
