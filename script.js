@@ -1,4 +1,4 @@
-document.addEventListener("DOMContentLoaded", function() {
+document.addEventListener("DOMContentLoaded", function () {
     gsap.from(".navbar", { opacity: 0, y: -50, duration: 1 });
     gsap.from(".hero-text", { opacity: 0, y: 50, duration: 1, delay: 0.5 });
     gsap.from(".hero-image", {
@@ -62,7 +62,11 @@ function sendEmail(event) {
     const email = document.getElementById('email').value;
 
     if (!name || !need || !email) {
-        alert("Please fill out all fields before submitting.");
+        Swal.fire({
+            title: "Form not complete?",
+            text: "Complete the form before submitting!",
+            icon: "error"
+        });
         return;
     }
 
